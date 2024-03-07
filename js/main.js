@@ -3,6 +3,8 @@ import javascriptLogo from "../images/javascript.svg";
 import viteLogo from "../images/vite.svg";
 import { setupCounter } from "../js/counter.js";
 
+
+
 document.querySelector("#app").innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
@@ -23,6 +25,3 @@ document.querySelector("#app").innerHTML = `
 
 setupCounter(document.querySelector("#counter"));
 
-const dayjs = require("dayjs");
-//import dayjs from 'dayjs' // ES 2015
-dayjs().format();
