@@ -1,7 +1,7 @@
 import "../css/style.css";
 import javascriptLogo from "../images/javascript.svg";
 import viteLogo from "../images/vite.svg";
-import { setupCounter } from "../js/counter.js";
+import { setupCounter } from "./counter.js";
 
 document.querySelector("#app").innerHTML = `
   <div>
@@ -22,7 +22,3 @@ document.querySelector("#app").innerHTML = `
 `;
 
 setupCounter(document.querySelector("#counter"));
-
-const dayjs = require("dayjs");
-//import dayjs from 'dayjs' // ES 2015
-dayjs().format();
