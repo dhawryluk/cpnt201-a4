@@ -1,6 +1,6 @@
 import dayjs from "dayjs";
 
-const startDate = dayjs("2023-09-23");
-const todaysDate = dayjs("2023-10-30");
-let difference = startDate.diff(todaysDate, "day");
-console.log(difference);
+export function currentTime(element) {
+  let now = dayjs().format("h:mm:ss a" + " on " + "DD/MM/YYYY");
+  element.innerHTML = `Current Time is ${now}`;
+}

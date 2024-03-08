@@ -82,6 +82,20 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+#currentTime {
+  background-color: #383839;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+#difference {
+  background-color: #383839;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
