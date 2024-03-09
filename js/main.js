@@ -1,7 +1,10 @@
 import "../css/style.css";
 import javascriptLogo from "../images/javascript.svg";
 import viteLogo from "../images/vite.svg";
-import { setupCounter } from "./counter.js";
+import { setupCounter } from "../js/counter.js";
+import { currentTime } from "./day.js";
+import { difference } from "./diff.js";
+import { vanillaPicker } from "./picker.js";
 
 document.querySelector("#app").innerHTML = `
   <div>
@@ -18,7 +21,20 @@ document.querySelector("#app").innerHTML = `
     <p class="read-the-docs">
       Click on the Vite logo to learn more
     </p>
+    <p id="currentTime"></p>
+    <p class>Start Date: 2023-09-23 <span> - Today's Date: 2023-10-30</span><p>
+    <p id="difference"></p>
+    <p id="loading"></p>
+    <div id="vanillaPicker">
+     <p id="button">Color Picker</p>
+     </div>
   </div>
 `;
 
 setupCounter(document.querySelector("#counter"));
+
+currentTime(document.querySelector("#currentTime"));
+
+difference(document.querySelector("#difference"));
+
+vanillaPicker(document.querySelector("#vanillaPicker"));

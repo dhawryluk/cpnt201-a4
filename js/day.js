@@ -1,10 +1,6 @@
 import dayjs from "dayjs";
 
-let now = dayjs();
-
-// // ISO Standard
-// console.log("ISO");
-// console.log(now.format());
-console.log("\nTime")
-console.log(now.format("HH:mm:ss"));
-console.log(now.format("h:mm:ss a"));
+export function currentTime(element) {
+  let now = dayjs().format("h:mm:ss a" + " on " + "DD/MM/YYYY");
+  element.innerHTML = `Current Time is ${now}`;
+}
