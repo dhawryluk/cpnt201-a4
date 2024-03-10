@@ -1,10 +1,10 @@
 import "../css/style.css";
 import javascriptLogo from "../images/javascript.svg";
 import viteLogo from "../images/vite.svg";
-import { setupCounter } from "../js/counter.js";
-import { currentTime } from "../js/day.js";
-import { difference } from "..js/diff.js";
-import { vanillaPicker } from "../js/picker.js";
+import { setupCounter } from "./counter.js";
+import { currentTime } from "./day.js";
+import { difference } from "./diff.js";
+import { vanillaPicker } from "./picker.js";
 
 document.querySelector("#app").innerHTML = `
   <div>
